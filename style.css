@@ -304,5 +304,12 @@ footer {
     .about-wrap {
         flex-direction: column;
         text-align: center;
-    }
+    }  
+    .cta-button {
+        background-color: #e74c3c;
+        color: white;
+        font-weight: bold;
+
+        paddingL: 8px 15px;
+        border-radius: 5px 
 }
