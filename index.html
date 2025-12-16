@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Portofolio pribadi Adi, berisi informasi diri, keterampilan, pengalaman, karya, dan media.">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Portofolio Profesional Adi</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- CSS eksternal -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav aria-label="Navigasi Utama">
+        <ul>
+            <li><a href="#about" class="active">Tentang</a></li>
+            <li><a href="#education">Pendidikan</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#contact">Kontak</a></li>
+            <li><a href="lat_css.html">kumpulan tugas</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section id="about">
+    <h2>Tentang Saya</h2>
+    <div class="about-wrap">
+        <img src="./images/foto1.jpg" alt="Foto Adi" class="profile-img">
+        <div>
+            <p>Saya Adi, seorang Web Developer yang senang mengubah ide menjadi tampilan digital yang rapi, responsif, dan enak dilihat.</p>
+            <p>Sejak 2023, saya aktif membuat konten edukatif dan proyek kreatif di dunia web.</p>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Riwayat Pendidikan & Pengalaman</h2>
+
+    <table>
+        <caption>Pendidikan dan Pengalaman Adi</caption>
+        <thead>
+            <tr>
+                <th>Tahun</th>
+                <th>Institusi</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2013 - 2019</td>
+                <td>SDN Bantargedang</td>
+                <td>Pelajar</td>
+            </tr>
+            <tr>
+                <td>2019 - 2022</td>
+                <td>SMP Al-Mujahid</td>
+                <td>Pelajar</td>
+            </tr>
+            <tr>
+                <td>2022 - 2025</td>
+                <td>SMK Al-Mujahid</td>
+                <td>Teknik Komputer dan Jaringan</td>
+            </tr>
+            <tr>
+                <td>2025 - Sekarang</td>
+                <td>Universitas Mayasari Bakhti</td>
+                <td>S1 Teknik Informatika</td>
+            </tr>
+            <tr>
+                <td>2025</td>
+                <td>PT. XYZ</td>
+                <td>Intern Web Developer</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3"><time datetime="2025-11-21">Update: Tahun 2025</time></td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+<section id="skills">
+    <h2>Keahlian</h2>
+
+    <ul class="skill-list">
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python (Flask)</li>
+        <li>UI/UX Design</li>
+        <li>Responsive Web Design</li>
+        <li>Content Creation</li>
+    </ul>
+
+    <dl>
+        <dt>Web Development</dt>
+        <dd>Membangun website modern, responsif, terstruktur.</dd>
+
+        <dt>Content Creation</dt>
+        <dd>Membuat konten kreatif untuk platform digital.</dd>
+    </dl>
+</section>
+<h2>Proyek</h2>
+        <div  class="project-card">
+            <h3>Video Tutorial HTML</h3>
+            <div class="video-wrapper">
+                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Tutorial HTML Adi" allowfullscreen></iframe>
+            </div>
+        </article>
+    </div>
+</section>
+<h2>Multimedia</h2>
+<div class="multi-wrap">  
+    <video controls>  
+        <source src="./Video/vd.mp4" type="video/mp4">  
+    </video>  
+
+    <audio controls>  
+        <source src="./audio/audio.mp3" type="audio/mpeg">  
+    </audio>  
+</div>
+
+</section>
+
+<section id="contact">
+    <h2>Hubungi Saya</h2>
+
+    <form action="https://formsubmit.co/adipapoy473@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+
+        <fieldset>
+            <legend>Informasi Diri</legend>
+            <label>Nama:
+                <input type="text" name="name" required minlength="3">
+            </label>
+            <label>Email:
+                <input type="email" name="email" required>
+            </label>
+            <label>Nomor:
+                <input type="tel" name="phone" pattern="[0-9]{10,15}" required>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pesan</legend>
+            <label>Pesan:
+                <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <div class="radio-wrap">
+                <label>
+                    <input type="radio" name="contact_type" value="saran" required> Saran
+                </label>
+                <label>
+                    <input type="radio" name="contact_type" value="pertanyaan"> Pertanyaan
+                </label>
+            </div>
+
+            <label class="agree">
+                <input type="checkbox" name="agree" required> Saya setuju untuk dihubungi
+            </label>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">
+            <i class="fas fa-paper-plane"></i> Kirim
+        </button>
+    </form>
+</section>
+
+</main>
+
+<aside class="social">
+    <h2>Ikuti Saya</h2>
+    <ul>
+        <li><a href="https://www.tiktok.com/@adi" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></li>
+        <li><a href="https://www.instagram.com/adipapoy132" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+        <li><a href="https://wa.me/qr/7MCDY4POHOOJE1" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+        <li><a href=https://youtube.com/@adipapoy6071?si=05eFpl2mlSc_pRLW""
+        target="-blank"><i class="fab fa-youtube"></i> you tube</a></li>
+    </ul>
+</aside>
+
+<footer>
+    <p>&copy; <time datetime="2025">2025</time> Adi. Semua hak dilindungi.</p>
+</footer>
+
+<script src="js/Script.js"></script>
+
+</body>
+</html>
